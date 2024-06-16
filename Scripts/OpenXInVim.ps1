@@ -1,8 +1,7 @@
-function Set-Location-X {
-    [CmdletBinding(SupportsShouldProcess)]
-    $pathspath = "$($env:userprofile)\CommonPaths\CommonDirPaths.txt"
+function Open-X-In-Vim {
+    $pathspath = "$($env:userprofile)\CommonPaths\CommonVimPaths.txt"
     if (![System.IO.File]::Exists($pathspath)) {
-        'USERPROFILE\CommonPaths\CommonDirPaths.txt not found'
+        'USERPROFILE\CommonPaths\CommonVimPaths.txt not found'
         return
     }
     $paths = $(Get-Content $pathspath)
@@ -11,5 +10,5 @@ function Set-Location-X {
         'invalid choice'
         return
     }
-    Set-Location $paths[$choice]
+    vim $paths[$choice]
 }

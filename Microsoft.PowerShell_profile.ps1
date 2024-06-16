@@ -5,4 +5,15 @@ Set-PSReadlineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
 . 'C:\Users\tgudl\OneDrive\Documents\PowerShell\Scripts\SetLocationX.ps1'
+. 'C:\Users\tgudl\OneDrive\Documents\PowerShell\Scripts\NotesScript.ps1'
+. 'C:\Users\tgudl\OneDrive\Documents\PowerShell\Scripts\ConvertDOCXtoPDF.ps1'
+. 'C:\Users\tgudl\OneDrive\Documents\PowerShell\Scripts\ConvertPPTXtoPDF.ps1'
+. 'C:\Users\tgudl\OneDrive\Documents\PowerShell\Scripts\CollectNotes.ps1'
+. 'C:\Users\tgudl\OneDrive\Documents\PowerShell\Scripts\GitFunctions.ps1'
+. 'C:\Users\tgudl\OneDrive\Documents\PowerShell\Scripts\OpenXInVim.ps1'
+. 'C:\Users\tgudl\OneDrive\projects\c-sharp\ShankCompiler\ShankTestScript.ps1'
+
 Set-Alias -Name cx -Value Set-Location-X
+Set-Alias -Name vx -Value Open-X-In-Vim
+Set-Alias -Name gss -Value Git-Status-Short
+Set-Alias -Name gls -Value Git-Log-Stat

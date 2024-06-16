@@ -1,7 +1,7 @@
-function Git-Status-Short {
+function Get-Git-Status-Short {
     git status --short
 }
 
-function Git-Log-Stat {
+function Get-Git-Log-Stat {
     git log --stat
 }

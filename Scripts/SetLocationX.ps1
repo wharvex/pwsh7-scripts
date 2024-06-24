@@ -11,5 +11,5 @@ function Set-Location-X {
         'invalid choice'
         return
     }
-    Set-Location $paths[$choice]
+    Push-Location -Path $paths[$choice]
 }
